@@ -1,0 +1,180 @@
+{
+	"layer": "top",
+	"position": "top",
+
+	"modules-left": [
+		"niri/workspaces",
+		"custom/arrow10",
+		"cava"
+	],
+
+	"modules-right": [
+		"custom/arrow9",
+		"pulseaudio",
+		"custom/arrow8",
+		"network",
+		"custom/arrow7",
+		"memory",
+		"custom/arrow6",
+		"cpu",
+		"custom/arrow5",
+		"disk",
+		"custom/arrow2",
+		"tray",
+		"clock#date",
+		"custom/arrow1",
+		"clock#time"
+	],
+
+	"cava": {
+		"framerate": 30,
+		"autosens": 1,
+		"sensitivity": 100,
+		"bars": 14,
+		"lower_cutoff_freq": 50,
+		"higher_cutoff_freq": 10000,
+		"hide_on_silence": false,
+		// "format_silent": "quiet",
+		"method": "pulse",
+		"source": "auto",
+		"stereo": true,
+		"reverse": false,
+		"bar_delimiter": 0,
+		"monstercat": false,
+		"waves": false,
+		"noise_reduction": 0.77,
+		"input_delay": 4,
+		"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+		"actions": {
+				"on-click-right": "mode"
+				}
+		},
+
+	// Modules
+	"clock#time": {
+		"interval": 10,
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+
+	"clock#date": {
+		"interval": 20,
+		"format": "{:%e %b %Y}",
+		"tooltip": false
+		//"tooltip-format": "{:%e %B %Y}"
+	},
+
+	"disk": {
+		"interval": 20,
+		"format": "󰋊 {free}",
+		"on-click": "baobab"
+	},
+
+	"cpu": {
+		"interval": 5,
+		"tooltip": false,
+		"format": " {usage}%",
+		"format-alt": " {load}",
+		"states": {
+			"warning": 70,
+			"critical": 90
+		}
+	},
+
+	"memory": {
+		"interval": 5,
+		"format": "  {used:0.1f}G/{total:0.1f}G",
+		"states": {
+			"warning": 70,
+			"critical": 90
+		},
+		"tooltip": false
+	},
+
+	"network": {
+		"interval": 5,
+		"format-ethernet": "󰈀  {ifname}",
+		"format-disconnected": "No connection",
+		"format-alt": "󰈀  {ipaddr}/{cidr}",
+		"tooltip": false
+	},
+
+	"niri/workspaces": {
+		"disable-scroll-wraparound": true,
+		"smooth-scrolling-threshold": 4,
+		"enable-bar-scroll": true,
+	},
+
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{icon} {volume}%",
+		"format-muted": " ",
+		"format-icons": {
+			"headphone": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": [" ", " "]
+		},
+		"scroll-step": 1,
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"tooltip": false
+	},
+
+	"tray": {
+		"icon-size": 18,
+		"spacing": 10
+	},
+
+	"custom/arrow1": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow2": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow3": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow4": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow5": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow6": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow7": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow8": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow9": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"custom/arrow10": {
+		"format": "",
+		"tooltip": false
+	}
+}
+
+// vi:ft=jsonc
