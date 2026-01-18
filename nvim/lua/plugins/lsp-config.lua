@@ -30,10 +30,15 @@ return {
         vim.lsp.config("clangd", {
             capabilities = capabilities
         })
+        
+        vim.lsp.config("bashls", {
+            capabilities = capabilities
+        })
 
 		vim.lsp.enable("lua_ls")
 		vim.lsp.enable("pyright")
         vim.lsp.enable("texlab")
         vim.lsp.enable("clangd")
+        vim.lsp.enable("bashls")
 	end,
 }
