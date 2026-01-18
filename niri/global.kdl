@@ -1,0 +1,13 @@
+// No windows decoration
+prefer-no-csd
+
+// Background for the overview
+spawn-sh-at-startup "swaybg -i ~/Pictures/wallpapers/house.jpg -m fill"
+
+// The path where screenshots are saved.
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+// Disble hotkey-overlay at startup
+hotkey-overlay {
+    skip-at-startup
+}

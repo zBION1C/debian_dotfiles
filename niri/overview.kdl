@@ -1,0 +1,13 @@
+// Optionally, disable the workspace shadows in the overview.
+overview {
+    workspace-shadow {
+        off
+    }
+}
+
+// Disable the hot corners.
+gestures {
+    hot-corners {
+        off
+    }
+}

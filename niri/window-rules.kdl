@@ -1,0 +1,60 @@
+// Window rules let you adjust behavior for individual windows.
+// Find more information on the wiki:
+// https://yalter.github.io/niri/Configuration:-Window-Rules
+
+// Make windows corned smooth
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+// Open save us as popups
+window-rule {
+    match title=r#"[Ss]ave [Aa]s|[Oo]pen [Ff]ile|[Oo]pen [Ff]older"#
+    open-floating true
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 600; }
+}
+
+// Open browser on upper monitor
+window-rule {
+    match app-id=r#"[Ff]irefox-esr"#
+    open-on-output "DP-1"
+}
+
+// Open the Firefox picture-in-picture player as floating by default.
+window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"[Ff]irefox-esr$"# title="^[Pp]icture-in-[Pp]icture$"
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 600; }
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"kitty"#
+    open-on-output "DP-3"
+}
+
+window-rule {
+    match title=r#"Load a new file"#
+    default-column-width { fixed 700; }
+    default-window-height { fixed 500; }
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"org.gnome.baobab"#
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 700; }
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"pavucontrol"#
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 700; }
+    open-floating true
+}

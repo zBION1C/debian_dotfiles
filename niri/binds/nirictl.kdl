@@ -1,0 +1,100 @@
+binds {
+    Mod+O repeat=false          { toggle-overview; }
+    Mod+Q repeat=false          { close-window; }
+
+    // Focus columns
+    Mod+h                    { focus-column-left; }
+    Mod+l                    { focus-column-right; }
+    // Focus windows
+    Mod+k                     { focus-window-up; }
+    Mod+j                    { focus-window-down; }
+
+    // Move columns
+    Mod+Shift+h              { move-column-left; }
+    Mod+Shift+l             { move-column-right; }
+
+    // Change monitor
+    Mod+u                 { focus-monitor-up; }
+    Mod+m               { focus-monitor-down; }
+    
+    // Move windows between monitors
+    Mod+Shift+u           { move-window-to-monitor-up; }
+    Mod+Shift+m         { move-window-to-monitor-down; }
+    
+    // Workspaces
+    Mod+1                       { focus-workspace 1; }
+    Mod+2                       { focus-workspace 2; }
+    Mod+3                       { focus-workspace 3; }
+    Mod+4                       { focus-workspace 4; }
+    Mod+5                       { focus-workspace 5; }
+    Mod+6                       { focus-workspace 6; }
+    Mod+7                       { focus-workspace 7; }
+    Mod+8                       { focus-workspace 8; }
+    Mod+9                       { focus-workspace 9; }
+    Mod+Shift+1                 { move-window-to-workspace 1; }
+    Mod+Shift+2                 { move-window-to-workspace 2; }
+    Mod+Shift+3                 { move-window-to-workspace 3; }
+    Mod+Shift+4                 { move-window-to-workspace 4; }
+    Mod+Shift+5                 { move-window-to-workspace 5; }
+    Mod+Shift+6                 { move-window-to-workspace 6; }
+    Mod+Shift+7                 { move-window-to-workspace 7; }
+    Mod+Shift+8                 { move-window-to-workspace 8; }
+    Mod+Shift+9                 { move-window-to-workspace 9; }
+
+    // Switches focus between the current and the previous workspace.
+    Mod+Tab                     { focus-workspace-previous; }
+
+    // Consume one window from the right to the bottom of the focused column.
+    Mod+Comma                   { consume-window-into-column; }
+    // Expel the bottom window from the focused column to the right.
+    Mod+Period                  { expel-window-from-column; }
+
+    // Cycle the width of a column
+    Mod+R                       { switch-preset-column-width; }
+    // Maximize column
+    Mod+F                       { maximize-column; }
+    // Fullscreen a window
+    Mod+Shift+F                 { fullscreen-window; }
+
+    // Makes the column "fill the rest of the space".
+    Mod+Ctrl+F { expand-column-to-available-width; }
+
+    // Center a colum
+    Mod+C { center-column; }
+
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+Equal { set-column-width "+10%"; }
+
+    // Move the focused window between the floating and the tiling layouPlt.
+    Mod+V       { toggle-window-floating; }
+    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+
+    // Toggle tabbed column display mode.
+    // Windows in this column will appear as vertical tabs,
+    // rather than stacked on top of each other.
+    Mod+W { toggle-column-tabbed-display; }
+
+    Print { screenshot; }
+    Ctrl+Print { screenshot-screen; }
+    Alt+Print { screenshot-window; }
+
+    // Applications such as remote-desktop clients and software KVM switches may
+    // request that niri stops processing the keyboard shortcuts defined here
+    // so they may, for example, forward the key presses as-is to a remote machine.
+    // It's a good idea to bind an escape hatch to toggle the inhibitor,
+    // so a buggy application can't hold your session hostage.
+    //
+    // The allow-inhibiting=false property can be applied to other binds as well,
+    // which ensures niri always processes them, even when an inhibitor is active.
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+
+    // The quit action will show a confirmation dialog to avoid accidental exits.
+    Mod+Shift+E { quit; }
+    Ctrl+Alt+Delete { quit; }
+
+    // Powers off the monitors. To turn them back on, do any input like
+    // moving the mouse or pressing any other key.
+    Mod+Shift+P { power-off-monitors; }
+
+    Mod+Backspace { spawn "/home/nicholas/.config/fuzzel/scripts/powermenu.sh"; }
+}

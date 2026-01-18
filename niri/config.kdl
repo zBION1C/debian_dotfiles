@@ -1,0 +1,15 @@
+// This config is in the KDL format: https://kdl.dev
+// "/-" comments out the following node.
+// Check the wiki for a full description of the configuration:
+// https://yalter.github.io/niri/Configuration:-Introduction
+
+include "global.kdl"
+include "layout.kdl"
+include "window-rules.kdl"
+include "overview.kdl"
+include "inputs.kdl"
+include "workspaces.kdl"
+include "outputs.kdl"
+include "binds/binds.kdl"
+include "layers.kdl"
+
