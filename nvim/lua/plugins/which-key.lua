@@ -24,6 +24,7 @@ return {
 			{ "<leader>cd", vim.lsp.buf.definition, desc = "Jump to definition", mode = "n" },
 			{ "<leader>ca", vim.lsp.buf.code_action, desc = "Code actions", mode = "n" },
 			{ "<leader>cf", vim.lsp.buf.format, desc = "Code format", mode = "n" },
+			{ "<leader>cx", vim.lsp.buf.references, desc = "Cross references", mode = "n" },
 
 			-- Textobjects bindings
 			{ "a", group = "Around textobject", mode = { "o", "x" } },
