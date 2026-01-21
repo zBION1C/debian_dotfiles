@@ -3,6 +3,8 @@ vim.opt.shiftwidth = 4 -- indentation width for `>>` and autoindent
 vim.opt.tabstop = 4 -- width of a <Tab>
 vim.opt.softtabstop = 4 -- number of spaces a tab counts for in insert mode
 
+vim.spell = true
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 
