@@ -1,6 +1,6 @@
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 16
+    gaps 10 
 
     // default behavior, focusing an off-screen column will keep at the left
     center-focused-column "never"
@@ -23,22 +23,9 @@ layout {
 
     // Focus ring looks.
     focus-ring {
-        // Logical pixels the ring extends out from the windows.
-        width 3
-
-        // You can also use gradients. They take precedence over solid colors.
-        // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
-        // The angle is the same as in linear-gradient, and is optional,
-        // defaulting to 180 (top-to-bottom gradient).
-        // You can use any CSS linear-gradient tool on the web to set these up.
-        // Changing the color space is also supported, check the wiki for more info.
-        //
+        on
+        width 2
         active-gradient from="#ffe80e" to="#2596be" angle=45
-
-        // You can also color the gradient relative to the entire view
-        // of the workspace, rather than relative to just the window itself.
-        // To do that, set relative-to="workspace-view".
-        //
         inactive-gradient from="#505050" to="#808080" angle=45
     }
 

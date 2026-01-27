@@ -1,13 +1,3 @@
-// Window rules let you adjust behavior for individual windows.
-// Find more information on the wiki:
-// https://yalter.github.io/niri/Configuration:-Window-Rules
-
-// Make windows corned smooth
-window-rule {
-    geometry-corner-radius 12
-    clip-to-geometry true
-}
-
 // Open save us as popups
 window-rule {
     match title=r#"[Ss]ave [Aa]s|[Oo]pen [Ff]ile|[Oo]pen [Ff]older"#
