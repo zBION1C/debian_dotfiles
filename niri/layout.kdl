@@ -25,8 +25,8 @@ layout {
     focus-ring {
         on
         width 2
-        active-gradient from="#ffe80e" to="#2596be" angle=45
-        inactive-gradient from="#505050" to="#808080" angle=45
+        active-color "#908caa"
+        inactive-color "#6e6a86" 
     }
 
     // You can enable drop shadows for windows.
