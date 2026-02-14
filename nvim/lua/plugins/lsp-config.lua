@@ -40,5 +40,7 @@ return {
         vim.lsp.enable("texlab")
         vim.lsp.enable("clangd")
         vim.lsp.enable("bashls")
+        vim.lsp.enable("ts_ls")
+        vim.lsp.enable("cssls")
 	end,
 }

@@ -1,70 +1,126 @@
 @import "./rose-pine.css";
 
 * {
-    font-family: "IosevkaTerm Nerd Font";
-    font-style: italic;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: transparent;
-    padding: 0px;
-    margin: 2px 5px 0px 5px;
+  font-family: "IosevkaTerm Nerd Font";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 0px;
+  margin: 2px 5px 0px 5px;
+}
+
+tooltip {
+  background: @base;
+  border: 2px solid @overlay;
 }
 
 /* Workspaces styling */
 #workspaces {
-    background: @base;
-    border: 2px solid @overlay;
-    border-radius: 15px;
-    padding: 5px 10px;
+  background: @base;
+  border: 2px solid @overlay;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
+
 #workspaces button {
-    margin: 0px;
-    min-height: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+  margin: 0px;
+  min-height: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 #workspaces button.focused {
-    background: @text;
-    color: @base;
+  background: @text;
+  color: @base;
 }
 
 /* Network styling */
 #network {
-    background: @base;
-    border: 2px solid @overlay;
-    border-radius: 15px;
-    padding: 5px 10px;
+  background: @base;
+  border: 2px solid @overlay;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
 /* Tray styling */
 #tray {
-    background: @base;
-    border: 2px solid @overlay;
-    border-radius: 15px;
-    padding: 5px 10px;
+  background: @base;
+  border: 2px solid @overlay;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+#tray menu {
+  background: @base;
+  border: 2px solid @overlay;
 }
 
 /* Clock styling */
 #clock {
-    background: @base;
-    border: 2px solid @overlay;
-    border-radius: 15px;
-    padding: 5px 10px;
+  background: @base;
+  border: 2px solid @overlay;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
 /* Window styling */
 #window {
-    background: @base;
-    border: 2px solid @overlay;
-    border-radius: 15px;
-    padding: 5px 10px;
+  background-color: @base;
+  border: 2px solid @overlay;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
+window#waybar.empty #window {
+  background: transparent;
+  border: 0px;
+  min-width: 30px;
+  margin: 5px;
+}
 
+#hardware {
+  background: @base;
+  border: 2px solid @overlay;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
 
+#power {
+  margin: 0px;
+  min-height: 0px;
+  background: @base;
+  border: 2px solid @overlay;
+  border-radius: 10px;
+  padding: 5px;
+}
 
+#custom-power {
+  padding-right: 10px;
+  padding-left: 5px;
+  background-color: @love;
+  min-width: 20px;
+  border-radius: 5px;
+}
 
+#custom-quit {
+  padding-right: 10px;
+  padding-left: 5px;
+}
 
+#custom-lock {
+  padding-right: 10px;
+  padding-left: 5px;
+}
 
+#custom-reboot {
+  padding-right: 10px;
+  padding-left: 5px;
+}
 
-
+#disk {
+  background: @base;
+  border: 2px solid @overlay;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
