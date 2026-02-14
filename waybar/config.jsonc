@@ -63,15 +63,18 @@
     },
 
     "disk": {
-        "format": "󰋊 {used}/{total}"
+        "format": "󰋊 {used}/{total}",
+        "on-click": "baobab"
     },
 
     "memory": {
-        "format": "  {used}%"
+        "format": "  {used}%",
+        "on-click": "kitty htop"
     },
 
     "cpu": {
-        "format": "  {usage}%"
+        "format": "  {usage}%",
+        "on-click": "kitty htop"
     },
 
     "network": { 
