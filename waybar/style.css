@@ -102,20 +102,38 @@ window#waybar.empty #window {
   min-width: 20px;
   border-radius: 5px;
 }
+#custom-power:hover {
+    background-color: #b4637a;
+}
 
 #custom-quit {
   padding-right: 10px;
   padding-left: 5px;
+  min-width: 20px;
+  border-radius: 5px;
+}
+#custom-quit:hover {
+  background-color: @highlightHigh;
 }
 
 #custom-lock {
   padding-right: 10px;
   padding-left: 5px;
+  min-width: 20px;
+  border-radius: 5px;
+}
+#custom-lock:hover {
+    background-color: @highlightHigh;
 }
 
 #custom-reboot {
   padding-right: 10px;
   padding-left: 5px;
+  min-width: 20px;
+  border-radius: 5px;
+}
+#custom-reboot:hover {
+    background-color: @highlightHigh;
 }
 
 #disk {
