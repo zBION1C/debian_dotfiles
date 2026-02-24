@@ -14,6 +14,7 @@
 	"modules-right": [
         "disk",
         "group/hardware",
+        "group/audio",
 		"tray",
 		"clock",
         "group/power"
@@ -24,13 +25,13 @@
         "drawer": {
             "transition-duration": 500,
             "children-class": "not-power",
-            "transition-left-to-right": false,
+            "transition-left-to-right": false
         },
         "modules": [
             "custom/power", // First element is the "group leader" and won't ever be hidden
             "custom/quit",
             "custom/lock",
-            "custom/reboot",
+            "custom/reboot"
         ]
     },
     "custom/quit": {
@@ -89,5 +90,43 @@
 
     "clock": {
         "format": "{:%d-%m-%Y %H:%M}"
+    },
+
+    "group/audio" : {
+        "orientation": "horizontal",
+        "modules" : [
+            "custom/cava",
+            "custom/playerinfo",
+            "pulseaudio"
+        ]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "default": [" ", " "]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
+    },
+
+    "custom/playerinfo": {
+        "format": "&lt; {} &gt;",
+        "exec": "~/.config/waybar/playerinfo.sh",
+        "escape": true,
+        "return-type": "json",
+        "interval": 1,
+        "tooltip": true,
+        "on-click-middle": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "on-click-left": "playerctl previous"
+    },
+
+    "custom/cava": {
+        "format": "{}",
+        "exec": "~/.config/waybar/cava.sh"
     }
 }

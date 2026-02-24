@@ -8,6 +8,9 @@ return {
 	},
 	lazy = false,
 	config = function()
-		require("nvim-web-devicons")
+		require("nvim-web-devicons").setup({
+            content_layout = "start",
+            tabs_layout = "equal"
+        })
 	end,
 }
