@@ -6,6 +6,7 @@
   font-weight: bold;
   font-size: 18px;
   background-color: transparent;
+  color: @text;
   padding: 0px;
   margin: 2px 5px 0px 5px;
 }
@@ -33,6 +34,23 @@ tooltip {
 #workspaces button.focused {
   background: @text;
   color: @base;
+}
+
+#battery {
+    background: @base;
+    border: 2px solid @overlay;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+#battery.warning {
+    background: @gold;
+    color: @base;
+}
+
+#battery.critical {
+    background: @love;
+    color: @base;
 }
 
 /* Network styling */

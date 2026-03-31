@@ -4,7 +4,8 @@
 
 	"modules-left": [
 		"niri/workspaces",
-        "niri/window"
+        "niri/window",
+        "battery"
 	],
 
     "modules-center": [
@@ -12,13 +13,25 @@
     ],
         
 	"modules-right": [
-        "disk",
         "group/hardware",
         "group/audio",
 		"tray",
 		"clock",
         "group/power"
 	],
+
+    "battery": {
+        "interval": 60,
+        "format": "{icon}",
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format-icons": {
+            "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+        }
+    },
 
     "group/power": {
         "orientation": "inherit",
@@ -95,8 +108,6 @@
     "group/audio" : {
         "orientation": "horizontal",
         "modules" : [
-            "custom/cava",
-            "custom/playerinfo",
             "pulseaudio"
         ]
     },
