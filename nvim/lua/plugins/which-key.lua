@@ -48,6 +48,10 @@ return {
 				require("nvim-treesitter-textobjects.select").select_textobject("@conditional.inner", "textobjects")
 			end },
 
+      -- Slidev bindings
+      {"<leader>sp", mode = {"n"}, function()
+        require("slidev").preview()
+      end },
 
 			-- Incremental selection bindings
 			{ "<leader>s", group = "Incremental selection" },
