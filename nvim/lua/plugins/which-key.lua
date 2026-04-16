@@ -49,7 +49,7 @@ return {
 			end },
 
       -- Slidev bindings
-      {"<leader>sp", mode = {"n"}, function()
+      {"<leader>sp", desc = "Slidev Preview", mode = {"n"}, function()
         require("slidev").preview()
       end },
 
