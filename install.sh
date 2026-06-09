@@ -15,8 +15,8 @@ git clone https://github.com/niri-wm/niri.git niri-repo && sudo mv niri-repo /op
 cd /opt/niri && cargo build --release
 sudo cp /opt/niri/target/release/niri /usr/local/bin
 sudo cp /opt/niri/resources/niri-session /usr/local/bin
-sudo mkdir /urs/local/share/wayland-sessions && sudo cp /opt/niri/resources/niri.desktop /urs/local/share/wayland-sessions
-sudo mkdir /usr/local/share/xdg-desktop-portal && sudo cp /opt/niri/resources/niri-portals.conf /urs/local/share/xdg-desktop-portal
+sudo mkdir /usr/local/share/wayland-sessions && sudo cp /opt/niri/resources/niri.desktop /urs/local/share/wayland-sessions
+sudo mkdir /usr/local/share/xdg-desktop-portal && sudo cp /opt/niri/resources/niri-portals.conf /usr/local/share/xdg-desktop-portal
 sudo cp /opt/niri/resources/niri.service /etc/systemd/user/
 sudo cp /opt/niri/resources/niri-shutdown.target /etc/systemd/user/
 # =========================================================================================================================
