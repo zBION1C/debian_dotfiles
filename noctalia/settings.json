@@ -624,9 +624,9 @@
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "Maple Mono Medium",
+        "fontDefault": "Maple Mono",
         "fontDefaultScale": 1.1,
-        "fontFixed": "Fira Code",
+        "fontFixed": "Maple Mono Medium",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.8,
         "panelsAttachedToBar": true,
