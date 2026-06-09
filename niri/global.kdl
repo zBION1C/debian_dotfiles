@@ -1,10 +1,7 @@
 // No windows decoration
 prefer-no-csd
 
-spawn-at-startup "waybar"
-
-// Background for the overview
-spawn-sh-at-startup "swaybg -i ~/Pictures/wallpapers/clouds.jpg -m fill"
+spawn-at-startup "qs" "-c" "noctalia-shell"
 
 // The path where screenshots are saved.
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
