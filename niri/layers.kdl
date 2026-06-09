@@ -2,3 +2,33 @@ layer-rule {
     match namespace="^wallpaper$"
     place-within-backdrop true
 }
+
+blur {
+  passes 4        // more passes = stronger blur (default: 3)
+  offset 3      // sample distance per pass (default: 3.0)
+  saturation 1.0  // color saturation boost (default: 1.5)
+}
+
+/* Apps: blur them all without xray for a better look */
+window-rule {
+  background-effect {
+    blur true
+    xray false
+  }
+}
+
+layer-rule {
+  match namespace="^noctalia-bar-content.*$"
+  background-effect {
+    blur true
+    xray false
+  }
+}
+
+layer-rule {
+  match namespace="^launcher$"
+  background-effect {
+    blur true
+    xray false
+  }
+}
