@@ -13,3 +13,6 @@ include "outputs.kdl"
 include "binds/binds.kdl"
 include "layers.kdl"
 
+
+include "./noctalia.kdl"
+
