@@ -8,7 +8,7 @@ sudo apt install noctalia-shell
 # ================================================== Installing Niri ======================================================
 sudo apt-get install -y gcc clang libudev-dev libgbm-dev libxkbcommon-dev libegl1-mesa-dev libwayland-dev libinput-dev libdbus-1-dev libsystemd-dev libseat-dev libpipewire-0.3-dev libpango1.0-dev libdisplay-info-dev
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-git clone https://github.com/niri-wm/niri.git && sudo mv niri /opt/niri
+git clone https://github.com/niri-wm/niri.git niri-repo && sudo mv niri-repo /opt/niri
 cd /opt/niri && cargo build --release
 cp /opt/niri/target/release/niri /usr/local/bin
 cp /opt/niri/resources/niri-session /usr/local/bin
