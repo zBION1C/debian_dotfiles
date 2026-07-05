@@ -46,6 +46,20 @@ window-rule {
 }
 
 window-rule {
+    match app-id=r#"org.gnome.Nautilus"#
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 700; }
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"superproductivity-bin"#
+    default-column-width { fixed 1500; }
+    default-window-height { fixed 1000; }
+    open-floating true
+}
+
+window-rule {
     match app-id=r#"pavucontrol"#
     default-column-width { fixed 1000; }
     default-window-height { fixed 700; }

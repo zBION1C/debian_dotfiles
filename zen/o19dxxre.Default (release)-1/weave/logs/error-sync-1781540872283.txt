@@ -1,0 +1,16 @@
+1781540756365	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1781540872030	Sync.Service	DEBUG	User-Agent: Zen/1.21.1b (Linux x86_64) FxSync/1.153.0.20260612115214.desktop
+1781540872030	Sync.Service	INFO	Starting sync at 2026-06-15 18:27:52 in browser session ttoaW3Ojtkj5
+1781540872030	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1781540872031	Sync.Status	INFO	Resetting Status.
+1781540872031	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1781540872032	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1781540872246	FirefoxAccounts	DEBUG	CommandQueue shutdown is flushing the queue with a timer=false
+1781540872280	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/190968272/info/collections
+1781540872281	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/190968272/info/configuration
+1781540872281	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1781540872282	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/190968272/info/configuration failed: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "<unknown>"  data: no] No traceback available
+1781540872282	Sync.Service	WARN	Failed to fetch info/configuration: [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "<unknown>"  data: no] No traceback available
+1781540872282	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.sys.mjs:96:13) JS Stack trace: sync@enginesync.sys.mjs:96:13
+1781540872282	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1781540872283	Sync.Service	DEBUG	Exception calling anonymous function: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.sys.mjs:96:13) JS Stack trace: sync@enginesync.sys.mjs:96:13

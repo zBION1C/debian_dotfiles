@@ -1,0 +1,10 @@
+{
+  "_comment": "ZenLeap User Themes. Use 'extends' to inherit from a built-in theme. Run :reload-themes after editing.",
+  "example-custom": {
+    "name": "Example Custom",
+    "extends": "meridian",
+    "accent": "#ff6b6b",
+    "accentBright": "#ff8e8e",
+    "highlight": "#ff6b6b"
+  }
+}

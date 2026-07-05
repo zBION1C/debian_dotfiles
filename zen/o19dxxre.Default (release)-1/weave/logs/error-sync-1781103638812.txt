@@ -1,0 +1,22 @@
+1781103286362	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1781103638438	Sync.Service	DEBUG	User-Agent: Zen/1.20.2b (Linux x86_64) FxSync/1.153.0.20260603112716.desktop
+1781103638438	Sync.Service	INFO	Starting sync at 2026-06-10 17:00:38 in browser session JeCagxcaG764
+1781103638438	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1781103638439	Sync.Status	INFO	Resetting Status.
+1781103638439	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1781103638440	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1781103638440	FirefoxAccounts	DEBUG	getOAuthToken enter
+1781103638440	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1781103638440	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1781103638440	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1781103638650	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/190968272/info/collections
+1781103638650	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/190968272/info/configuration
+1781103638660	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1781103638782	FirefoxAccounts	DEBUG	CommandQueue shutdown is flushing the queue with a timer=false
+1781103638810	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/190968272/info/configuration failed: [Exception... "The connection was established, but no data was ever received"  nsresult: "0x804b0014 (NS_ERROR_NET_RESET)"  location: "<unknown>"  data: no] No traceback available
+1781103638810	Sync.Service	WARN	Failed to fetch info/configuration: [Exception... "The connection was established, but no data was ever received"  nsresult: "0x804b0014 (NS_ERROR_NET_RESET)"  location: "<unknown>"  data: no] No traceback available
+1781103638810	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1781103638810	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1781103638810	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.sys.mjs:96:13) JS Stack trace: sync@enginesync.sys.mjs:96:13
+1781103638811	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1781103638811	Sync.Service	DEBUG	Exception calling anonymous function: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.sys.mjs:96:13) JS Stack trace: sync@enginesync.sys.mjs:96:13
