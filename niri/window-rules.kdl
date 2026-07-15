@@ -53,6 +53,14 @@ window-rule {
 }
 
 window-rule {
+    match app-id=r#"org.gnome.Calculator"#
+    default-column-width { fixed 600; }
+    default-window-height { fixed 800; }
+    open-floating true
+}
+
+
+window-rule {
     match app-id=r#"superproductivity-bin"#
     default-column-width { fixed 1500; }
     default-window-height { fixed 1000; }
