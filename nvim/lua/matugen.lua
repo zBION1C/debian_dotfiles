@@ -4,22 +4,22 @@
    require('base16-colorscheme').setup {
      -- Background tones
      base00 = '#121316', -- Default Background
-     base01 = '#1f1f23', -- Lighter Background (status bars)
+     base01 = '#1e2022', -- Lighter Background (status bars)
      base02 = '#292a2d', -- Selection Background
-     base03 = '#8f9099', -- Comments, Invisibles
+     base03 = '#8d9199', -- Comments, Invisibles
      -- Foreground tones
-     base04 = '#c5c6d0', -- Dark Foreground (status bars)
-     base05 = '#e4e2e6', -- Default Foreground
-     base06 = '#e4e2e6', -- Light Foreground
-     base07 = '#e4e2e6', -- Lightest Foreground
+     base04 = '#c3c6cf', -- Dark Foreground (status bars)
+     base05 = '#e3e2e6', -- Default Foreground
+     base06 = '#e3e2e6', -- Light Foreground
+     base07 = '#e3e2e6', -- Lightest Foreground
      -- Accent colors
      base08 = '#ffb4ab', -- Variables, XML Tags, Errors
-     base09 = '#e0bbdd', -- Integers, Constants
-     base0A = '#c0c6dc', -- Classes, Search Background
-     base0B = '#b1c5ff', -- Strings, Diff Inserted
-     base0C = '#e0bbdd', -- Regex, Escape Chars
-     base0D = '#b1c5ff', -- Functions, Methods
-     base0E = '#c0c6dc', -- Keywords, Storage
+     base09 = '#dabde2', -- Integers, Constants
+     base0A = '#bcc7dc', -- Classes, Search Background
+     base0B = '#a5c8ff', -- Strings, Diff Inserted
+     base0C = '#dabde2', -- Regex, Escape Chars
+     base0D = '#a5c8ff', -- Functions, Methods
+     base0E = '#bcc7dc', -- Keywords, Storage
      base0F = '#93000a', -- Deprecated, Embedded Tags
    }
  end

@@ -27,11 +27,6 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"kitty"#
-    open-on-output "DP-3"
-}
-
-window-rule {
     match title=r#"Load a new file"#
     default-column-width { fixed 700; }
     default-window-height { fixed 500; }
